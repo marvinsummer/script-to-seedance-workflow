@@ -1,0 +1,7 @@
+interface:
+  display_name: "Script to Seedance Workflow"
+  short_description: "剧本到角色图场景图与 Seedance 视频流程"
+  default_prompt: "Use $script-to-seedance-workflow to turn a screenplay into structured Feishu documentation, Dreamina visuals, and Seedance video prompts."
+
+policy:
+  allow_implicit_invocation: true
