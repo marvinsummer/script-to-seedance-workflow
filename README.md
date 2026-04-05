@@ -1,52 +1,73 @@
-# script-to-seedance-workflow
+# 剧本转 Seedance 视觉开发工作流
+## script-to-seedance-workflow
 
-A Codex skill for turning a screenplay into a structured visual development workflow with Feishu, Dreamina, and Seedance.
+一个用于将剧本转化为结构化视觉开发流程的 Codex 技能，覆盖角色解析、场景解析、飞书文档沉淀、Dreamina 图像提示词生成，以及 Seedance 参考生视频提示词与测试流程。
 
-## What this skill does
+## 这个技能能做什么
 
-This skill helps transform a screenplay into:
+这个技能可以帮助你把一份剧本逐步转化为：
 
-- a structured character list
-- a structured scene list
-- a Feishu workflow document
-- Dreamina role-image prompts
-- Dreamina scene-image prompts
-- Seedance reference-based video prompts
-- controlled multimodal video test steps
+- 结构化的角色列表
+- 结构化的场景列表
+- 一份持续维护的飞书工作流文档
+- Dreamina 角色图提示词
+- Dreamina 场景图提示词
+- Seedance 参考生视频提示词
+- 多模态视频测试步骤与记录
 
-## Included files
+## 仓库内容
 
-- `SKILL.md`: the main skill definition
-- `references/prompt-templates.md`: prompt templates for roles, scenes, and Seedance
-- `references/cli-recipes.md`: Dreamina and Seedance CLI command patterns
-- `references/setup-checklist.md`: setup and authentication checklist
-- `agents/openai.yaml`: agent metadata
+- `SKILL.md`
+  主要技能定义文件
 
-## Requirements
+- `references/prompt-templates.md`
+  角色图、场景图、Seedance 提示词模板
 
-Before using this skill, make sure the following tools are available:
+- `references/cli-recipes.md`
+  Dreamina 和 Seedance 的常用命令示例
+
+- `references/setup-checklist.md`
+  依赖安装、登录状态和前置检查清单
+
+- `agents/openai.yaml`
+  这个技能对应的 agent 元数据配置
+
+## 使用前准备
+
+在使用这个技能之前，请先确认下面这些依赖已经准备好：
 
 - `lark-cli`
 - `dreamina`
 - `curl`
 
-You should also confirm:
+同时建议确认：
 
-- `lark-cli` is installed and authenticated
-- `dreamina` is installed and logged in
-- any required web-side authorization for video generation is already completed
+- `lark-cli` 已安装并完成登录认证
+- `dreamina` 已安装并完成登录
+- 如果要进行视频生成，相关模型需要的网页侧授权已经完成
 
-## Workflow overview
+## 工作流概览
 
-1. Confirm dependencies and authentication
-2. Parse the screenplay into characters and scenes
-3. Create or continue one Feishu workflow document
-4. Draft and confirm role-image prompts
-5. Draft and confirm scene-image prompts
-6. Write Seedance reference-based video prompts
-7. Run controlled multimodal video tests
+1. 检查依赖和登录状态
+2. 将剧本解析为角色列表和场景列表
+3. 创建或续写一份飞书工作流文档
+4. 起草并确认角色图提示词
+5. 起草并确认场景图提示词
+6. 编写 Seedance 参考生视频提示词
+7. 进行受控的视频测试并记录结果
 
-## Notes
+## 适用场景
 
-This repository contains the skill definition and supporting references only.
-Users should review and adapt prompts, tool setup, and workflow details for their own environment and project needs.
+这个技能适合以下场景：
+
+- 将剧本拆解为角色和场景
+- 为角色图和场景图准备统一结构的提示词
+- 将剧本视觉开发过程沉淀到飞书文档中
+- 基于角色图和场景图编写 Seedance 视频提示词
+- 做参考图驱动的视频生成测试
+
+## 说明
+
+这个仓库主要包含技能定义和配套参考资料。
+
+在实际使用时，你仍然需要根据自己的项目、工具环境、账号状态和模型权限，对提示词、命令参数和执行流程做适配与确认。
