@@ -1,5 +1,10 @@
 # 剧本转 Seedance 2.0 Skill
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-111111?style=flat-square)](https://github.com/marvinsummer/script-to-seedance-workflow/blob/main/LICENSE)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-0F766E?style=flat-square)](https://github.com/marvinsummer/script-to-seedance-workflow)
+[![Seedance 2.0](https://img.shields.io/badge/Seedance-2.0-2563EB?style=flat-square)](https://github.com/marvinsummer/script-to-seedance-workflow)
+[![Dreamina Workflow](https://img.shields.io/badge/Dreamina-Workflow-F59E0B?style=flat-square)](https://github.com/marvinsummer/script-to-seedance-workflow)
+
 把一份剧本，系统化地转成角色解析、场景解析、飞书工作流文档、Dreamina 图像提示词，以及 Seedance 2.0 / 2.0fast 参考生视频提示词。
 
 > 一个面向剧本视觉开发流程的 Codex Skill。
